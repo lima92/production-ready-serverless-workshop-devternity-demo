@@ -34,7 +34,7 @@ const init = async () => {
 
   console.log('SSM params loaded')
 
-  process.env.TEST_ROOT                     = params.url
+  process.env.TEST_ROOT                     = `https://ycws3kc4u9.execute-api.eu-west-1.amazonaws.com/dev`
   process.env.orders_api                    = `${params.url}/orders`
   process.env.restaurants_api               = `${params.url}/restaurants`
   process.env.restaurants_table             = params.table_name
